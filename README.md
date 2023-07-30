@@ -10,7 +10,7 @@ circ-chi.vercel.appはLINEBOT用、circ-hp.vercel.appはホームページ用の
 （本当は、Firebaseとか使うべき）
 Google DriveとのIOはGoogleDriveAPIを利用しています。
 ホームページ側からのインジェクション等を避けるため、サーバーごとにGoogleDriveのアクセス権は制限してあります。
-日々のメール通知機能やライド実施・日程登録の呼びかけは、GASのトリガーを利用しています。
+日々のメール通知機能やライド実施・日程登録の呼びかけは、GASのトリガーでvercelを叩くことで動作しています。
 スポーツやろうよ！の通知のため、GAS側でGmailを取得し、転送しています。
 
 Gon-1222/CIRCにはcirc-chi、Gon-1222/CIRC-HPはcirc-hpのソースおよびフロントエンドファイルを掲載しています。
